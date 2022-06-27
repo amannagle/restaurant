@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Nanum+Myeongjo&family=Poppins&family=Roboto:ital,wght@0,700;1,100&family=Titan+One&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-image: url(background.webp);
+}
+
+.rest-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: black;
+    color: white;
+}
+.rest-card
+{
+    height: 100px;
+    width: 400px;
+}
+
+.navbar > ul
+{
+    padding: 0px;
+    display: flex;
+    gap: 80px;
+    list-style-type: none;
+    cursor: pointer;
+}
+header h3
+{
+    padding-left: 40px;
+}
+header
+{
+    background: black;
+    color: white;
+    opacity: 0.8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+li:hover
+{
+    text-decoration: underline;
+}
+
+#content
+{
+    min-height: 500px;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+}
