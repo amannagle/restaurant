@@ -1,5 +1,6 @@
 import { loadHomePage } from './loader.js';
 import {loadMenu} from './loadmenu.js';
+import {loadAboutUs} from './aboutus.js'
 loadHomePage();
 addlisteners();
 
@@ -10,6 +11,10 @@ function switchTab(e)
         else if (e.target.textContent == 'Home')
         {   loadHomePage();
             addlisteners();
+        }
+        else
+        {
+            loadAboutUs();
         }
 }
 
