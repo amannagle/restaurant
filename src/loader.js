@@ -2,12 +2,17 @@ function loadHomePage()
 {
     const body = document.querySelector('body');
     const content_div = document.querySelector('#content');
+    const old_header = document.querySelector('header');
+    if(old_header != null)
+    old_header.remove();
     const header = document.createElement('header');
     const h3 = document.createElement('h3');
     const nav = document.createElement('nav');
     const ul = document.createElement('ul');
     const section = document.createElement('section');
     const description= document.createElement('p');
+    content_div.replaceChildren();
+    console.log(old_header);
     h3.textContent="Aman's Bistro";
     header.appendChild(h3);
     header.appendChild(nav);
